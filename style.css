@@ -1,0 +1,147 @@
+html {
+	height: 100%
+	background-color: white/*#CEE7E6*/;
+	} 
+body {
+	background-color: #CEE7E6;
+	/*margin: 0 auto;*/
+}
+
+.name-text, .value-text {
+	font-family: "Verdana";
+	fill: #707070;
+}
+
+.pie .name-text{
+  font-size: 1em;
+}
+
+.pie .value-text{
+  font-size: 2.5em;
+}
+
+.pie path {
+	shape-rendering: auto;
+}
+
+#wrapper {
+	height: 690px;
+	margin: auto;
+/*	padding-top: 40px;*/
+	width: 1600px;
+	display: flex;
+	flex-direction: row;
+/*	border: 1px solid black;*/
+}
+
+
+#chart {
+	height: 400px;
+	width: 575px;
+	display: flex;
+	margin: auto;
+}
+
+#bar {
+	display: flex;
+	margin: auto;
+}
+
+#bar rect {
+		shape-rendering: crispEdges;
+
+}
+
+polyline{
+    opacity: 0.7;
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+}
+
+.labelName {
+    font-size: 0.9em;
+    font-family: 'Cairo';
+}
+
+.bruh {
+	font-family: 'Cairo';
+	font-size: 0.9em;
+}
+
+#header {
+	background-color: #B8C9C9;
+	padding: 18px;
+	text-align: center;
+	border-bottom: 1px solid #737373;
+}
+
+#topheader {
+	font-family: 'Roboto';
+	text-align: center;
+	font-size: 2.4em;
+}
+
+#bottomheader {
+	margin-top: 10px;
+	font-family: 'Roboto';
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.yLabel {
+	font-family: 'Cairo';
+
+}
+
+.xLabel {
+	font-family: 'Cairo';
+}
+
+#wrapperwrapper {
+	text-align: center;
+	height: 690px;
+	margin: auto;
+	padding-top: 40px;
+	width: 1600px;
+	display: flex;
+	flex-direction: row;
+	background-color: #CEE7E6;
+}
+
+#footer {
+	height: 15px;
+	font-size: 0.8em;
+	text-align: right;
+	font-family: 'Roboto';
+	padding-top: 40px;
+}
+
+    .d3-tip {
+      line-height: 1;
+      padding: 6px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+ 
+    /* Creates a small triangle extender for the tooltip */
+    .d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }
+ 
+    /* Style northward tooltips specifically */
+    .d3-tip.n:after {
+      margin: -2px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
